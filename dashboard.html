@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TCManager | Dashboard </title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="all.css" type="text/css" media="all" />
+</head>
+<body>
+	<header>
+		<a href="http://localhost:5000">nodemon</a>
+		<div class="container">
+			<div class="head">
+				⟨<span>TCM</span>anager⟩
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="#" class="active">Dashboard</a>
+					</li>
+					<li>
+						<a href="#" id="delete">Log Out</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="form greet">
+  <p id="greetUser"> </p>
+  <p id="greetPass"> </p>
+	</div>
+  <table id="table" class="table">
+		<tbody id="tbody">
+			<tr>
+				<th>S/N</th>
+				<th>Name</th>
+				<th>Phone</th>
+				<th>Action</th>
+			</tr>
+		</tbody>
+	</table>
+	<form class="form" id="form">
+		<fieldset>
+			<legend>New Contact Info</legend>
+			<label for="name">Contact Name</label>
+			<input type="text" id="name" placeholder="Enter Name Here...."><br>
+			<label for="Phone">Phone Number</label>
+			<input type="number" name="Phone" id="phone" placeholder="Number...."><br>
+			<input type="button" name="add" id="add" value="Add contacts" />
+			<input type="button" onclick="deleteAll()" value="Remove All">
+		</fieldset>
+	</form><br><br>
+	<footer>
+		<a href="mailto:dalemoayokunlephilip@gmail.com">
+			Mail Us
+		</a>
+		<a href="about.html">
+			About
+		</a>
+		<a href="terms.html">
+			Terms of Service
+		</a>
+		<br><br>
+		&copy; Copyright 2020
+	</footer>
+<script src="chance.js"></script>
+<script src="dash.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
