@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TCManager | Dashboard </title>
-  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="all.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<header>
-		<a href="http://localhost:5000">nodemon</a>
 		<div class="container">
 			<div class="head">
 				⟨<span>TCM</span>anager⟩
@@ -34,16 +33,18 @@
   <p id="greetUser"> </p>
   <p id="greetPass"> </p>
 	</div>
-  <table id="table" class="table">
-		<tbody id="tbody">
-			<tr>
-				<th>S/N</th>
-				<th>Name</th>
-				<th>Phone</th>
-				<th>Action</th>
-			</tr>
-		</tbody>
-	</table>
+	<div class="overlay">
+	  <table id="table" class="table">
+			<tbody id="tbody">
+				<tr>
+					<th>S/N</th>
+					<th>Name</th>
+					<th>Phone</th>
+					<th>Action</th>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 	<form class="form" id="form">
 		<fieldset>
 			<legend>New Contact Info</legend>
@@ -51,8 +52,8 @@
 			<input type="text" id="name" placeholder="Enter Name Here...."><br>
 			<label for="Phone">Phone Number</label>
 			<input type="number" name="Phone" id="phone" placeholder="Number...."><br>
-			<input type="button" name="add" id="add" value="Add contacts" />
-			<input type="button" onclick="deleteAll()" value="Remove All">
+			<input type="button" name="add" id="add" value="Add contacts" class="button"/>
+			<input type="button" onclick="deleteAll()" value="Remove All" class="button">
 		</fieldset>
 	</form><br><br>
 	<footer>
@@ -68,8 +69,8 @@
 		<br><br>
 		&copy; Copyright 2020
 	</footer>
-<script src="chance.js"></script>
-<script src="dash.js"></script>
-<script src="script.js"></script>
+<script src="js/chance.js"></script>
+<script src="js/dash.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
