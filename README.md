@@ -1,3 +1,3 @@
 # tcmanager
 
-[http://tcmanager.vercel.app](live link)
+[Live link](http://tcmanager.vercel.app)
